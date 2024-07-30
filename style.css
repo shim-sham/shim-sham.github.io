@@ -1,0 +1,162 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+.link {
+  font-family: 'Courier New',monospace;
+  font-size: 16px;
+  background-color: #fcfceb;
+  color: #000000;
+}
+
+.link:hover {
+  background-color: #FED766;
+}
+
+body{
+  color: #1C0221;
+  font-size: 16px;
+  font-family: 'Times New Roman', serif;
+  background-color: #fcfceb;
+}
+
+body {
+  margin: 10;
+  padding: 10;
+}
+
+header {
+    color: #1C0221;
+    padding: 20px;
+    text-align: center;
+}
+h1 {
+  margin:0;
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.intro img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin-right: 20px;
+}
+
+.details h2 {
+  color: #FED766;
+}
+
+.details p {
+  margin-bottom: 20px;
+}
+
+a {
+  color: #FED766;
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #1C0221;
+  color: #FCFCEB;
+  text-align: center;
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+  background-color:#FED766 ;
+  padding: 10px;
+  height: 50px;
+}
+
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+.popup:hover{
+  background-color:#FED766 ;
+
+}
+.popup .popupText {
+  visibility: hidden;
+  background-color: #1C0221;
+  min-width: fit-content; 
+  color: #FED766;
+  text-align: center;
+  border-radius: 6px;
+  padding: 10px ;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%)
+}
+/*figure this popup crap out */
+.popup .popupText::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transformX(-50%);  
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.popup .show {
+  visibility: visible;
+}
+
+
+audio {
+  min-width: 150px;
+  max-width: 175px;
+  height: 30px;
+}
+
+audio::-webkit-media-controls-panel {
+  background-color: #FCFCEB; 
+  border-radius: 5px;
+  padding: 5px; 
+}
+
+audio::-webkit-media-controls-current-time-display,
+audio::-webkit-media-controls-time-remaining-display,
+audio::-webkit-media-controls-timeline
+{
+  display: none;
+}
+audio::-webkit-media-controls-mute-button,
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-timeline-container,
+audio::-webkit-media-controls-volume-slider,
+{
+  display: inline-block;
+}
+
+.github-link {
+  color: #333;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+.github-link:hover {
+  color: #000;
+}

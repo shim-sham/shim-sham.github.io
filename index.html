@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> shambhavi sinha :) </title>
+    <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  </head>
+    <body class = "aboutMe">
+
+        <header>
+            <h1>Shambhavi Sinha</h1>
+        </header>
+        <main>
+            <section class="intro">
+                <img src="profile.jpg" alt="Profile Picture">
+                <p>Hello! My name is Shambhavi Sinha. I'm an A-level student with a passion for coding and making <span class="popup" onclick = "toggle(event)"> music. <span class="popupText" id="myPopup"> here is a piece I'm working on right now!
+                    <audio controls>
+                  <source src="music.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+                </audio>
+                </span> </span> I run a coding club at my school with the mission of encouraging more young women to pursue interests in technology and computer science.</p>
+            </section>
+            <section class="details">
+                <p>Feel free to reach out to me at <a class = "link" href="mailto:shambhavisinha2435@gmail.com">shambhavisinha2435@gmail.com</a>.</p>
+                <p>Check out my projects on <a class="github-link" href="https://github.com/shim-sham" target="_blank"><i class="fab fa-github"></i> GitHub</a>.</p>
+            </section>
+        </main>
+
+        <script>
+            function toggle(event) {
+              event.stopPropagation();
+              var popup = document.getElementById("myPopup");
+              popup.classList.toggle("show");
+              document.addEventListener("click", closePopup);
+            }
+
+            function closePopup(event) {
+              var popup = document.getElementById("myPopup");
+              if (!popup.contains(event.target) && popup.classList.contains("show")) {
+                popup.classList.remove("show");
+                document.removeEventListener("click", closePopup);
+              }
+            }
+
+            function adjustPopupPosition(popup) {
+              var rect = popup.getBoundingClientRect();
+              var viewportWidth = window.innerWidth;
+
+              if (rect.left < 0) {
+                popup.style.left = '0';
+                popup.style.transform = 'translateX(0)';
+              } else if (rect.right > viewportWidth) {
+                popup.style.left = 'auto';
+                popup.style.right = '0';
+                popup.style.transform = 'translateX(0)';
+              } else {
+                popup.style.left = '50%';
+                popup.style.right = 'auto';
+                popup.style.transform = 'translateX(-50%)';
+              }
+            }
+        </script>
+  </body>
+
+</html>
