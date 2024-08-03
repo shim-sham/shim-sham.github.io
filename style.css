@@ -93,7 +93,7 @@ nav {
 }
 .popup:hover{
   background-color:#FED766 ;
-
+  color: black;
 
 }
 .popup .popupText {
