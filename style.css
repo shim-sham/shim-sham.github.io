@@ -3,26 +3,11 @@ html {
   width: 100%;
 }
 
-.link {
-  font-family: 'Courier New',monospace;
-  font-size: 20px;
-  background-color: #fcfceb;
-  color: #000000;
-  text-decoration: mediumpurple wavy underline;
-
-}
-
-.link:hover {
-  background-color: #FED766;
-  text-decoration: mediumpurple wavy underline;
-
-}
-
 body{
-  color:  #2c0434;
+  color: #5F1353	;
   font-size: 20px;
   font-family: 'Times New Roman', serif;
-  background-color: #fcfceb;
+  background-color: #CBA3FF;
   margin-left: 5%;
   margin-right:5%;
 }
@@ -37,8 +22,12 @@ header {
     padding: 20px;
     text-align: center;
 }
-h1 {
-  margin:0;
+h2 {
+}
+#name{
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .intro {
@@ -53,14 +42,23 @@ h1 {
   margin-right: 20px;
 }
 
-#name{
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
+.link {
+  font-family: 'Courier New',monospace;
+  font-size: 20px;
+  text-decoration: darkslateblue wavy underline;
+  color: #5F1353	;
+
 }
-#name:hover{
-  
+
+.link:hover {
+  background-color: #FED766;
+  color: black;
+  text-decoration: darkslateblue wavy underline;
+
 }
+
+
+
 a:hover {
   text-decoration:underline;
 
@@ -68,7 +66,7 @@ a:hover {
 
 footer {
   background-color: #1C0221;
-  color: #FCFCEB;
+  color: mistyrose	;
   text-align: center;
   padding: 10px;
   position: absolute;
@@ -91,7 +89,7 @@ nav {
   position: relative;
   display: inline-block;
   cursor: pointer;
-  text-decoration:mediumpurple wavy underline;
+  text-decoration:darkslateblue	 wavy underline;
 }
 .popup:hover{
   background-color:#FED766 ;
@@ -100,9 +98,9 @@ nav {
 }
 .popup .popupText {
   visibility: hidden;
-  background-color: #1C0221;
+  background-color: #FFDFDF;
+  fill-opacity: 0.5;
   min-width: fit-content; 
-  color: #FED766;
   text-align: center;
   border-radius: 6px;
   padding: 10px ;
@@ -119,9 +117,8 @@ nav {
   top: 100%;
   left: 50%;
   transformX(-50%);  
-  border-width: 5px;
-  border-style: solid;
-  border-color: #555 transparent transparent transparent;
+
+  
 }
 
 .popup .show {
@@ -136,7 +133,7 @@ audio {
 }
 
 audio::-webkit-media-controls-panel {
-  background-color: #FCFCEB; 
+  background-color: #FF5B5B	; 
   border-radius: 5px;
   padding: 5px; 
 }
@@ -154,13 +151,13 @@ audio::-webkit-media-controls-volume-slider{
 }
 
 #github-link {
-  color: #940000;
+  color: #330500;
   font-size: 30px;
   text-decoration: none;
   
 }
 
 #github-link:hover {
-  color: #4c0080;
+  color: #5F1353;
   transform: scale(1.2);
 }
