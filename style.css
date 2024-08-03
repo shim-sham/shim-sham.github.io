@@ -5,20 +5,26 @@ html {
 
 .link {
   font-family: 'Courier New',monospace;
-  font-size: 16px;
+  font-size: 20px;
   background-color: #fcfceb;
   color: #000000;
+  text-decoration: mediumpurple wavy underline;
+
 }
 
 .link:hover {
   background-color: #FED766;
+  text-decoration: mediumpurple wavy underline;
+
 }
 
 body{
-  color: #1C0221;
-  font-size: 16px;
+  color:  #2c0434;
+  font-size: 20px;
   font-family: 'Times New Roman', serif;
   background-color: #fcfceb;
+  margin-left: 5%;
+  margin-right:5%;
 }
 
 body {
@@ -47,21 +53,17 @@ h1 {
   margin-right: 20px;
 }
 
-.details h2 {
-  color: #FED766;
+#name{
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
 }
-
-.details p {
-  margin-bottom: 20px;
+#name:hover{
+  
 }
-
-a {
-  color: #FED766;
-  text-decoration: underline;
-}
-
 a:hover {
-  text-decoration: underline;
+  text-decoration:underline;
+
 }
 
 footer {
@@ -89,9 +91,11 @@ nav {
   position: relative;
   display: inline-block;
   cursor: pointer;
+  text-decoration:mediumpurple wavy underline;
 }
 .popup:hover{
   background-color:#FED766 ;
+
 
 }
 .popup .popupText {
@@ -139,24 +143,24 @@ audio::-webkit-media-controls-panel {
 
 audio::-webkit-media-controls-current-time-display,
 audio::-webkit-media-controls-time-remaining-display,
-audio::-webkit-media-controls-timeline
-{
+audio::-webkit-media-controls-timeline{
   display: none;
 }
 audio::-webkit-media-controls-mute-button,
 audio::-webkit-media-controls-play-button,
 audio::-webkit-media-controls-timeline-container,
-audio::-webkit-media-controls-volume-slider,
-{
+audio::-webkit-media-controls-volume-slider{
   display: inline-block;
 }
 
-.github-link {
-  color: #333;
+#github-link {
+  color: #940000;
+  font-size: 30px;
   text-decoration: none;
-  font-size: 1.2em;
+  
 }
 
-.github-link:hover {
-  color: #000;
+#github-link:hover {
+  color: #4c0080;
+  transform: scale(1.2);
 }
