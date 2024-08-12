@@ -4,10 +4,10 @@ html {
 }
 
 body{
-  color: #5F1353	;
-  font-size: 20px;
-  font-family: 'Times New Roman', serif;
-  background-color: #CBA3FF;
+  color: #610000	;
+  font-size: 17px;
+  font-family: 'Verdana', sanserif;
+  background-color: #f9d2d2;
   margin-left: 5%;
   margin-right:5%;
 }
@@ -36,24 +36,25 @@ h2 {
     margin-bottom: 20px;
 }
 .intro img {
-  border-radius: 50%;
   width: 150px;
-  height: 150px;
   margin-right: 20px;
 }
 
 .link {
   font-family: 'Courier New',monospace;
   font-size: 20px;
-  text-decoration: darkslateblue wavy underline;
-  color: #5F1353	;
+  text-decoration: darkslateblue underline;
+  color: #610000	;
+  font-weight: 550;
+  
 
 }
 
 .link:hover {
-  background-color: #FED766;
+  background-color: #c3c2ff;
   color: black;
-  text-decoration: darkslateblue wavy underline;
+  text-decoration: darkslateblue underline;
+  
 
 }
 
@@ -92,7 +93,7 @@ nav {
   text-decoration:darkslateblue	 wavy underline;
 }
 .popup:hover{
-  background-color:#FED766 ;
+  background-color:#fff0ff ;
   color: black;
 
 }
@@ -150,14 +151,15 @@ audio::-webkit-media-controls-volume-slider{
   display: inline-block;
 }
 
-#github-link {
+.icon-link {
   color: #330500;
   font-size: 30px;
   text-decoration: none;
   
+  
 }
 
-#github-link:hover {
+.icon-link:hover {
   color: #5F1353;
   transform: scale(1.2);
 }
