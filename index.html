@@ -11,23 +11,25 @@
         <h1><img id = "name" src="name sticker.png" alt="Shambhavi Sinha" </h1>
     </header>
     <main>
+      <i id="dark-mode-toggle" class="fas fa-moon icon-link" title="Toggle Dark Mode"></i>
+
         <section class="intro">
             <img src="profile.png" alt="Profile Picture">
-            <p>Hello! I'm Shambhavi Sinha :) I'm an A-level student with a passion for coding and making 
+            <p>Hello! I'm Shambhavi Sinha :) I'm an A-level student in the UK with a passion for coding and making 
               <span class="popup" class="link" onclick = "toggle(event)"> music. 
                 <span class="popupText" id="myPopup"> here's a piece I'm working on right now!
                 <audio controls><source src="music.mp3" type="audio/mpeg">Your browser does not support the audio element.</audio>
                 </span> 
-              </span> <br>My options at GCSE were computer science, further maths, music, and religious studies, and I'm taking maths, further maths, physics, music, and chemistry for A-level (exhausting, I know)</p>
+              </span> <br>I'm taking maths, further maths, physics, music, and chemistry for A-level (exhausting, I know)</p>
         </section>
       <h2>Some things I'm up to :)</h2>
       <p><ul>
         <li>Running a Hack (coding) Club at my school with the mission of encouraging more young women to pursue their passion in technology and computer science :D</li>
         <li>Improving this site...</li>
         <li>Working towards setting up a teen coding community in my city</li>
-        <li>Trying to make an iOS app in SwiftUI</li>
+        <li>Attempting to make a Sprig game</li>
       </ul></p>
-    <h2>My Finished Projects</h2>
+    <h2>My finished projects</h2>
       <p><a href="https://scrapbook.hackclub.com/shambhavi" target="_blank">My scrapbook</a>
       <ul>
         <li>Made a 3D website of a music gallery! (showcasing some of my music) check the code out on the <a href="https://github.com/shim-sham/3d-music-gallery" target="_blank">github</a> or go straight to the <a href="https://shim-sham.github.io/3d-music-gallery/" target="_blank">website</a></li>
@@ -36,11 +38,11 @@
       <h2>Languages</h2>
       <p><ul>
         <li>Python (of course)</li>
-        <li>HTML, CSS (I made this site)</li>
+        <li>HTML, CSS</li>
         <li>Some Javascript</li>
         <li>A-Frame (used for making VR experiences) </li>
       </ul></p>
-            <p>Feel free to reach out to me at <a class = "link" href="mailto:shambhavisinha2435@gmail.com">shambhavisinha2435@gmail.com</a>&nbsp or on my slack: <a class="link" href ="https://hackclub.slack.com/team/U07DLEKJA85">@shambhavi</a></p>
+            <p>Feel free to reach out to me at <a href="mailto:shambhavisinha2435@gmail.com">shambhavisinha2435@gmail.com</a>&nbsp or on my slack: <a  href ="https://hackclub.slack.com/team/U07DLEKJA85">@shambhavi</a></p>
             <p>
               <a href="https://github.com/shim-sham" target="_blank" ><i class="fab fa-github icon-link"></i></a>&nbsp&nbsp
               <a href="mailto:shambhavisinha2435@gmail.com" target="_blank"><i class="fa-solid fa-envelope icon-link"></i></a> &nbsp&nbsp 
@@ -49,40 +51,6 @@
             <br><br></p>
     </main>
 
-      <script>
-          function toggle(event) {
-            event.stopPropagation();
-            var popup = document.getElementById("myPopup");
-            popup.classList.toggle("show");
-            document.addEventListener("click", closePopup);
-          }
-  
-          function closePopup(event) {
-            var popup = document.getElementById("myPopup");
-            if (!popup.contains(event.target) && popup.classList.contains("show")) {
-              popup.classList.remove("show");
-              document.removeEventListener("click", closePopup);
-            }
-          }
-  
-          function adjustPopupPosition(popup) {
-            var rect = popup.getBoundingClientRect();
-            var viewportWidth = window.innerWidth;
-  
-            if (rect.left < 0) {
-              popup.style.left = '0';
-              popup.style.transform = 'translateX(0)';
-            } else if (rect.right > viewportWidth) {
-              popup.style.left = 'auto';
-              popup.style.right = '0';
-              popup.style.transform = 'translateX(0)';
-            } else {
-              popup.style.left = '50%';
-              popup.style.right = 'auto';
-              popup.style.transform = 'translateX(-50%)';
-            }
-          }
-      </script>
+      <script src = "script.js"></script>
     </body>
-
 </html>
