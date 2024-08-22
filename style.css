@@ -83,8 +83,8 @@ nav {
   display: inline-block;
   cursor: pointer;
   text-decoration: wavy underline;
-  color: var(--text-color);
   transition: transform 0.3s;
+  color: var(--link-color);
 }
 .popup:hover{
   transform: scale(1.1);
@@ -94,6 +94,7 @@ nav {
 .popup .popupText {
   visibility: hidden;
   background-color: var(--popup-background);
+  color: var(--text-color);
   fill-opacity: 0.5;
   min-width: fit-content; 
   text-align: center;
@@ -151,8 +152,6 @@ audio::-webkit-media-controls-volume-slider{
   font-size: 30px;
   text-decoration: none;
   transition: transform 0.3s;
-
-  
   
 }
 
