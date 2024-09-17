@@ -58,3 +58,19 @@ window.onload = () => {
   }
 };
 
+
+function randomizeMessage() {
+  const messages = [
+      "Ask me what I'm reading right now",
+      "Ask me what I'm listening to",
+      "Ask me my favorite project I'm making",
+      "Ask me to collaborate",
+      "Ask me about my current goals",
+      "Ask me about my coding journey",
+      "Ask me about my latest adventures"
+  ];
+  const randomMessage = messages[Math.floor(Math.random() * messages.length)];
+  const messageElement = document.getElementById('message');
+  messageElement.innerHTML = `${randomMessage} at <a href="mailto:shambhavisinha2435@gmail.com">shambhavisinha2435@gmail.com</a>&nbsp 
+  or on my Slack: <a href="https://hackclub.slack.com/team/U07DLEKJA85">@shambhavi</a> <button onclick="randomizeMessage()">random!</button>`;
+}
