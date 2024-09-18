@@ -63,7 +63,7 @@ function randomizeMessage() {
   const messages = [
       "Ask me what I'm reading right now",
       "Ask me what I'm listening to",
-      "Ask me my favorite project I'm making",
+      "Ask me my favourite project I'm making",
       "Ask me to collaborate",
       "Ask me about my current goals",
       "Ask me about my coding journey",
