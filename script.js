@@ -67,7 +67,8 @@ function randomizeMessage() {
       "Ask me to collaborate",
       "Ask me about my current goals",
       "Ask me about my coding journey",
-      "Ask me about my latest adventures"
+      "Ask me about my latest adventures",
+      "Feel free to reach out to me",
   ];
   const randomMessage = messages[Math.floor(Math.random() * messages.length)];
   const messageElement = document.getElementById('message');
