@@ -172,3 +172,7 @@ audio::-webkit-media-controls-timeline{
   color: var(--audio-background);
   transform: scale(1.2);
 }
+
+#align-right{
+  text-align: right;
+}
