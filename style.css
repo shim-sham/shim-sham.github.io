@@ -85,7 +85,7 @@ nav {
   display: inline-block;
   cursor: pointer;
   text-decoration: wavy underline;
-  transition: transform 0.3s;
+  transition: transform 0.1s;
   color: var(--link-color);
 }
 .popup:hover{
