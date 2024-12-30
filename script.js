@@ -30,13 +30,14 @@ function adjustPopupPosition(popup) {
     popup.style.transform = 'translateX(-50%)';
   }
 }
+
+
 const toggleIcon = document.getElementById('dark-mode-toggle');
 const body = document.body;
 
 toggleIcon.addEventListener('click', () => {
   body.classList.toggle('dark-mode');
 
-  // Toggle between moon and sun icon
   if (body.classList.contains('dark-mode')) {
     toggleIcon.classList.remove('fa-moon');
     toggleIcon.classList.add('fa-sun');
@@ -48,7 +49,6 @@ toggleIcon.addEventListener('click', () => {
   }
 });
 
-// Load the preferred theme on page load
 window.onload = () => {
   const theme = localStorage.getItem('theme');
   if (theme === 'dark') {
@@ -62,10 +62,10 @@ window.onload = () => {
 function randomizeMessage() {
   const messages = [
       "Ask me what I'm reading right now",
-      "Ask me what I'm listening to",
-      "Ask me my favourite project I'm making",
+      "Ask me what I'm listening to right now",
+      "Ask me about my favourite project",
       "Ask me to collaborate",
-      "Ask me about my current goals",
+      "Share your thoughts with me",
       "Ask me about my coding journey",
       "Ask me about my latest adventures",
       "Feel free to reach out to me",

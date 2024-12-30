@@ -8,47 +8,50 @@
     <link rel="stylesheet" href = "typed.scss">
   </head>
   <body>
-    <div id = "navbar">
-      <div id="navbar-section">
-        <div id = "navbar-links" >about</div>
-        <div id = "navbar-links">current projects</div>
-        <div id = "navbar-links">finished projects</div>
-      </div>
-    </div>
+    
+    <ul  id = "navbar">
+      <li><a id = "navbar-links" href="#about">about</a></li>
+      <li><a id = "navbar-links" href="#current-projects">current projects</a></li>
+      <li><a id = "navbar-links" href="finished-projects">finished projects</a></li>
+      <li><a id = "navbar-links" href="about.asp">languages</a></li>
+      <li><a id = "navbar-links" href="about.asp">contact me</a></li>
+    </ul>
+    
     <header>
       <h1><img id = "name" src="name sticker.png" alt="Shambhavi Sinha"> </h1>
     </header>
     <main>
-      <i id="dark-mode-toggle" class="fas fa-moon icon-link" title="Toggle Dark Mode"></i>
+      <i id="dark-mode-toggle" class="fas fa-moon icon-link" title="Toggle Dark Mode"></i><p>theme</p>
 
-        <section class="intro">
+        <section class="intro" id = "about">
             <img src="profile.png" alt="Profile Picture">
-            <p>hello! I'm shambhavi :) i'm an A-level student in the UK with a passion for coding and making 
+            <p id = "intro-block">hello! I'm shambhavi :) i'm an A-level student in the UK with a passion for coding and making 
               <span class="popup" class="link" onclick = "toggle(event)"> music. 
                 <span class="popupText" id="myPopup"> here's my most recent piece - best experienced with headphones!
                 <audio controls><source src="music.mp3" type="audio/mpeg">Your browser does not support the audio element.</audio>
                 </span> 
-              </span> <br>i'm taking maths, further maths, physics, and music for A-level!</p>
+              </span> i'm taking maths, further maths, physics, and music for A-level!</p>
         </section>
       
-      <h2>some things i'm up to &nbsp&nbsp <a id="align-right" href="https://github.com/shim-sham" target="_blank"><i class="fab fa-github icon-link"></i></a> </h2>
+      <h2 id="current-projects">some things i'm up to &nbsp&nbsp <a id="align-right" href="https://github.com/shim-sham" target="_blank"><i class="fab fa-github icon-link"></i></a> </h2>
       <p><ul>
-        <li>Creating a home for online musical tools! Includes a virtual piano, and will include a drum pad. <a href = "https://github.com/shim-sham/musical-home">source code</a> and <a href = "shim-sham.github.io/musical-home/">site</a></li><br>
+        <li>Creating a home for online musical tools! Includes a virtual piano, and a drum pad. <a href = "https://github.com/shim-sham/musical-home">source code</a> and <a href = "shim-sham.github.io/musical-home/">site</a></li><br>
         <li>Collaborating with teens around Europe to organise a European satellite hackathon called EuroHacks, taking place in August 2025</li><br>
         <li>Creating a desktop virtual pet app that helps you keep focused and productive :)</li><br>
         <li>Setting up a coding community in my city. This is the <a href ="https://shim-sham.github.io/coding-crew/">website</a> and the <a href = "https://github.com/shim-sham/coding-crew">code</a></li><br>
         <li>Running a Hack (coding) Club at my school with the mission of encouraging more young women to pursue their passion in technology and computer science :D</li><br>
         <li>Making a sprig game...</li><br>
-        <li>Creating a sound visualiser, with the help of <a href ="https://workshops.hackclub.com/sound_galaxy/">this hack club tutorial</a>. This is the <a href="https://shim-sham.github.io/audio-visualiser/">website</a> so far!</li><br>
+        
         <li>Improving this site... Here's the <a href="https://github.com/shim-sham/shim-sham.github.io">code</a> :)</li><br>
         
       </ul></p>
       
-    <h2>my finished projects</h2>
-      <p>
+    <h2 id = "finished-projects">my finished (or paused) projects</h2>
+      <p> (is anything really ever finished?)
       <ul>
         <li>Created a macropad for <a href = "https://hackpad.hackclub.com/">this hack club event</a>, including designing the PCB, building the case, and coding the firmware. Currently waiting for it to be shipped to me!</li><br>
-        <li>Made a <a href = https://shim-sham.github.io/spooky-room/">super simple spooky website</a> for hack club's <a href = "https://manor.hackclub.com/">spooky boba manor</a> </li><br>
+        <li>Made a <a href = "https://shim-sham.github.io/spooky-room/">super simple spooky website</a> for hack club's <a href = "https://manor.hackclub.com/">spooky boba manor</a> </li><br>
+        <li>Coded a sound visualiser, with the help of <a href ="https://workshops.hackclub.com/sound_galaxy/">this hack club tutorial</a>. This is the <a href="https://shim-sham.github.io/audio-visualiser/">website</a></li><br>
         <li>Created a 3D website of a music gallery! (showcasing some of my music) check the code out on the <a href="https://github.com/shim-sham/3d-music-gallery" target="_blank">github</a> or go straight to the <a href="https://shim-sham.github.io/3d-music-gallery/" target="_blank">website</a></li><br>
         <li>Designed a PCB business card and got a few of them manufactured using the grant that hack club provides. This is how they turned out! <br><a href="https://cloud-lb10kc3ql-hack-club-bot.vercel.app/020240822_144236.jpg">picture 1</a><br><a href = "https://cloud-lb10kc3ql-hack-club-bot.vercel.app/120240822_144247.jpg">picture 2</a></li><br>
         <li>Composed music for a video game. This is the <a href = "https://github.com/shim-sham/music-for-a-game">github containing the files</a>.</li><br>
@@ -64,7 +67,7 @@
         <li>HTML, CSS</li>
         <li>A-Frame (used for making VR experiences) </li>
       </ul></p>
-            <p id="message">Feel free to reach out to me at <a href="mailto:shambhavisinha2435@gmail.com">shambhavisinha2435@gmail.com</a>&nbsp or on my slack: <a  href ="https://hackclub.slack.com/team/U07DLEKJA85" target="_blank">@shambhavi</a>
+            <p id="message">Feel free to reach out to me at <a href="mailto:shambhavisinha2435@gmail.com">shambhavisinha2435@gmail.com</a>&nbsp or on my Slack: <a  href ="https://hackclub.slack.com/team/U07DLEKJA85" target="_blank">@shambhavi</a>
             <button onclick="randomizeMessage()">random!</button>
 </p>
             <p>
