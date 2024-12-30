@@ -6,26 +6,29 @@
     <link rel="stylesheet" href="style.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href = "typed.scss">
+    <script src="https://unpkg.com/typed.js@2.0.16"></script>
+
   </head>
   <body>
     
     <ul  id = "navbar">
+      <img id = "name" src="name sticker.png" alt="Shambhavi Sinha"> 
       <li><a id = "navbar-links" href="#about">about</a></li>
       <li><a id = "navbar-links" href="#current-projects">current projects</a></li>
-      <li><a id = "navbar-links" href="finished-projects">finished projects</a></li>
-      <li><a id = "navbar-links" href="about.asp">languages</a></li>
-      <li><a id = "navbar-links" href="about.asp">contact me</a></li>
+      <li><a id = "navbar-links" href="#finished-projects">finished projects</a></li>
+      <li><a id = "navbar-links" href="#languages">languages</a></li>
+      <li><a id = "navbar-links" href="#message">contact me</a></li>
     </ul>
     
     <header>
-      <h1><img id = "name" src="name sticker.png" alt="Shambhavi Sinha"> </h1>
+      <h1> <span>hello! I'm shambhavi</span><span class="typing"></span> </h1>
     </header>
     <main>
       <i id="dark-mode-toggle" class="fas fa-moon icon-link" title="Toggle Dark Mode"></i><p>theme</p>
-
+     
         <section class="intro" id = "about">
             <img src="profile.png" alt="Profile Picture">
-            <p id = "intro-block">hello! I'm shambhavi :) i'm an A-level student in the UK with a passion for coding and making 
+            <p id = "intro-block">i'm an A-level student in the UK with a passion for coding and making 
               <span class="popup" class="link" onclick = "toggle(event)"> music. 
                 <span class="popupText" id="myPopup"> here's my most recent piece - best experienced with headphones!
                 <audio controls><source src="music.mp3" type="audio/mpeg">Your browser does not support the audio element.</audio>
@@ -56,7 +59,7 @@
         <li>Designed a PCB business card and got a few of them manufactured using the grant that hack club provides. This is how they turned out! <br><a href="https://cloud-lb10kc3ql-hack-club-bot.vercel.app/020240822_144236.jpg">picture 1</a><br><a href = "https://cloud-lb10kc3ql-hack-club-bot.vercel.app/120240822_144247.jpg">picture 2</a></li><br>
         <li>Composed music for a video game. This is the <a href = "https://github.com/shim-sham/music-for-a-game">github containing the files</a>.</li><br>
       </ul></p></div>
-      <h2>languages i've dabbled with</h2>
+      <h2 id = "languages">languages i've dabbled with</h2>
       <p><ul>
         <li>Python</li>
         <li>Javascript</li>

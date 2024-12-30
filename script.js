@@ -75,3 +75,22 @@ function randomizeMessage() {
   messageElement.innerHTML = `${randomMessage} at <a href="mailto:shambhavisinha2435@gmail.com">shambhavisinha2435@gmail.com</a>&nbsp 
   or on my Slack: <a href="https://hackclub.slack.com/team/U07DLEKJA85">@shambhavi</a> <button onclick="randomizeMessage()">random!</button>`;
 }
+
+const type = document.querySelector('.typing');
+
+var typed = new Typed('.typing', {
+  strings: [", a coder", ", a composer", "^500, a Ravel enthusiast","^500, an overach^500ie^250ver","^1000, a hack clubber", "."],
+  typeSpeed: 75,
+  backSpeed: 45,
+  loop: false,
+  backDelay: 1500,
+  startDelay: 1000,
+  onComplete: function (self) {type.style.paddingRight = getCursorWidth(); self.cursor.remove(); }
+});
+function getCursorWidth() {
+  const typedCursor = document.querySelector('.typed-cursor');
+  if (typedCursor) {
+    return (typedCursor.offsetWidth + "px");
+  }
+  return "11px";
+}
