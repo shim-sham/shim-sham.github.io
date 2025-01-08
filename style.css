@@ -83,14 +83,7 @@ header {
   flex-shrink: 1;
   flex-basis: 0;
 }
-#navbar img{
-  width:20%;
-  display: block;
-}
 
-#navbar img:hover{
-  cursor: pointer;
-}
 #navbar {
   width: 90%;
   height:42px;
@@ -104,21 +97,17 @@ header {
   scrollbar-color:#FFF5F5 #FF5B5B ;
   z-index: 1;
   position: fixed;
-  
+  list-style:none;
 }
-#navbar-link-container{
-  list-style-type: none;
-  display: inline-flex;
-  flex-grow: 3;
-}
+
 .navbar-links {
   color: #FFF5F5;
   font-size: 17px;
-  font-family: Epilogue;
   font-weight: 400;
   line-height: 27px;
   word-wrap: break-word;
-  padding: 10px;
+  list-style-type: none;
+
 }
 
 a {
