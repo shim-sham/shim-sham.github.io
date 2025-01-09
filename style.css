@@ -110,6 +110,32 @@ header {
 
 }
 
+.phone-only {
+  display: none;
+}
+
+.laptop-only {
+  display: none;
+}
+
+@media screen and (max-width: 760px) {
+  .phone-only {
+    display: inline;
+  }
+  .laptop-only {
+    display: none;
+  }
+}
+@media screen and (min-width: 761px) {
+  .phone-only {
+    display: none;
+  }
+  .laptop-only {
+    display: inline;
+  }
+}
+
+
 a {
   color: var(--link-color);
   text-decoration: underline;
