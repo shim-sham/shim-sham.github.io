@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>virtual piano blog</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="s icon.png">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </head>
+    <body>
+      <ul id="navbar">
+        <li><a class="navbar-links" href="index.html">home</a></li>
+        <li><a class="navbar-links" href="blog.html">blog</a></li>
+        <li class="phone-only"><a class="navbar-links" href="#current-projects">projects</a></li>
+        <li class="laptop-only"><a class="navbar-links" href="#current-projects">current projects</a></li>
+        <li class="laptop-only"><a class="navbar-links" href="#finished-projects">finished projects</a></li>
+        <li><a class="navbar-links" href="#languages">languages</a></li>
+        <li><a class="navbar-links" href="#message">contact me</a></li>
+      </ul>
+      <br><br><br>
+<h1>building my musical home - virtual piano</h1>
+          <p>
+            The problem with every other piano website was that they were just too unnatural. They were cluttered with popups and ads, lacking any composing tools, and, worst of all, the keyboard-to-piano mapping felt awkwardly…wrong.
+          </p>
+          <p>
+              My initial goal for creating this website was to overcome these problems and create 
+              a website I could use regularly. I needed to build a simple piano website with intuitive 
+              key mapping and some trusty composing supports.
+          </p>
+
+          <h2>my plan</h2>
+          <p>Every good project starts with a hurriedly jotted-down plan. Here's mine.</p>
+          <ul>
+              <li>A piano with keys that actually fit!</li>
+              <li>Note history: a log of notes that are played, solving the inevitable tragedy of forgetting that amazing melody you just played.</li>
+              <li>Chord identifier: so you don’t have to work out that it’s an A# M9sus4/C by yourself.</li>
+              <li>Scale indicator: highlights the diatonic notes of your chosen scale (we all forget sometimes…)</li>
+          </ul>
+
+          <h2>problems faced and lessons learnt</h2>
+          <ul>
+              <li>
+                  My first problem was getting the layout correct. Getting just the right widths and 
+                  margins took me longer than I’d like to admit… However, I’m a lot more comfortable 
+                  with positioning things using CSS than I was before that gruelling experience.
+              </li>
+              <li>
+                  At one point, there was a bug where holding a note for long enough would make the 
+                  note history rapidly log the same note over and over (and make everyone stressed). 
+                  Figuring out the logic needed to fix this taught me about objects in JavaScript, 
+                  a variable type I had completely ignored before this!
+              </li>
+              <li>
+                  I learnt a lot about Tonaljs, which was <strong>instrumental</strong> in making the 
+                  chord identifier and scale indicator.
+              </li>
+          </ul>
+          <p>I’ll probably keep adding to this; in the meantime, go check out the site!</p>
+      <footer><br><br>© Shambhavi Sinha<br> <img src = "name sticker.png" width = "150px"></footer>
+    </body>
+</html>
