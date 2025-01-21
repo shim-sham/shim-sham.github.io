@@ -9,14 +9,22 @@
   </head>
   <body>
     <ul id="navbar">
-      <li><a class="navbar-links" href="index.html">home</a></li>
-      <li><a class="navbar-links" href="blog.html">blog</a></li>
-      <li class="phone-only"><a class="navbar-links" href="#current-projects">projects</a></li>
-      <li class="laptop-only"><a class="navbar-links" href="#current-projects">current projects</a></li>
-      <li class="laptop-only"><a class="navbar-links" href="#finished-projects">finished projects</a></li>
-      <li><a class="navbar-links" href="#languages">languages</a></li>
-      <li><a class="navbar-links" href="#message">contact me</a></li>
-    </ul>
+      <li class="dropdown">
+          <a class="navbar-links" href="index.html">home</a>
+          <div class="dropdown-content">
+              <a href="#current-projects">current projects</a>
+              <a href="#finished-projects"> finished projects</a>
+              <a href="#languages">languages</a>
+              <a href="#contact">contact me</a>
+          </div>
+      </li>
+      <li class="dropdown">
+          <a class="navbar-links" href="blog.html">blog</a>
+          <div class="dropdown-content">
+            <a href="virtual-piano.html">how i made my virtual piano</a>
+          </div>
+      </li>
+  </ul>
     <br><br><br>
 <h1>My Blog</h1>
     <main>
