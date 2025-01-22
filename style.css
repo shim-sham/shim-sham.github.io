@@ -96,6 +96,11 @@ h1{
   flex-shrink: 1;
   flex-basis: 0;
 }
+#navbar-frame{
+  z-index: 10;
+  top:0px; 
+  left: 0px;
+}
 
 #navbar {
   width: 90%;
