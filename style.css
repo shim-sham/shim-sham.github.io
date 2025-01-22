@@ -9,15 +9,28 @@ html {
   --popup-background: #ffebeb;
   --text-color: #610000;
   --link-color: #5f1e8a;
-  --audio-background: #FF5B5B
+  --audio-background: #FF5B5B;
+  --opptext-color:#f2bebe ;
 }
 
 body.dark-mode {
   --background-color: #2e0000;
   --popup-background: #333333;
-  --text-color: #f9d2d2;
+  --text-color: #f2bebe;
   --link-color: #c79dfb;
   --audio-background: #FF5B5B;
+  --opptext-color:#610000 ;
+
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: wavy underline;
+
 }
 
 .nutshell-stuff img{
@@ -86,17 +99,16 @@ h1{
 
 #navbar {
   width: 90%;
-  height:42px;
-  padding: 24px 24px;
+  height:30px;
+  padding: 24px 0px;
   background-color: #FF5B5B;
-  justify-content: space-around;
-  align-items: start;
+  justify-content: space-evenly;
   display: inline-flex;
   overflow-y:visible;
   z-index: 1;
   position: fixed;
   list-style:none;
-  border-radius: 25px;
+  border-radius: 10px;
 
 }
 
@@ -116,22 +128,16 @@ h1{
   position: relative;
   display: inline-block;
   overflow-y: visible;
-
 }
 
 .dropdown-content {
   overflow-y: visible;
-
   display: none;
   top: 100%;
   position: absolute;
-  background-color: #FF5B5B;
+  background-color: var(--opptext-color);
   min-width: 100px;
   z-index: 2;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
 }
 
 .dropdown-content a {
@@ -141,10 +147,14 @@ h1{
   display: block;
 }
 
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 .dropdown-content a:hover {
   background-color: var(--popup-background);
-
 }
+
 #spotify{
   justify-self: right;
   background-color: var(--popup-background);
@@ -156,15 +166,7 @@ h1{
   border-top-right-radius: 0%;
 }
 
-a {
-  color: var(--link-color);
-  text-decoration: underline;
-}
 
-a:hover {
-  text-decoration: wavy underline;
-
-}
 .horiz-scroll {
   width: 100%; 
   overflow-x: auto;
@@ -195,7 +197,8 @@ a:hover {
   padding:10px;
   background-color: var(--popup-background);
   text-align: center;
-  box-shadow: 4px 4px rgb(0, 0, 0, .1);
+  box-shadow: 4px 4px var(--text-color);
+  border-radius:6px ;
 }
 
 
