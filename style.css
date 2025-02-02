@@ -302,3 +302,6 @@ audio::-webkit-media-controls-timeline {
 footer{
   font-size: 15px;
 }
+
+.done{
+  list-style: "✓ ";}
