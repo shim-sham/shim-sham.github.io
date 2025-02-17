@@ -160,10 +160,10 @@ h1{
   background-color: var(--popup-background);
 }
 
-#spotify{
+.favs{
   justify-self: right;
   background-color: var(--popup-background);
-  width:30%;
+
   padding: 10px;
   margin-left: 5px;
   border-radius: 25px;
@@ -171,7 +171,9 @@ h1{
   border-top-right-radius: 0%;
 }
 
-
+#favs-container{
+  width:30%;
+}
 .horiz-scroll {
   width: 100%; 
   overflow-x: auto;
