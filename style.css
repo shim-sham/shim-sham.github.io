@@ -163,7 +163,6 @@ h1{
 .favs{
   justify-self: right;
   background-color: var(--popup-background);
-
   padding: 10px;
   margin-left: 5px;
   border-radius: 25px;
@@ -172,7 +171,7 @@ h1{
 }
 
 #favs-container{
-  width:30%;
+  width:50%;
 }
 .horiz-scroll {
   width: 100%; 

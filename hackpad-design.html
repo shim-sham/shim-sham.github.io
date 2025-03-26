@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>desiging hackpad blog</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="s icon.png">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </head>
+    <body>
+      <ul id="navbar">
+        <li class="dropdown">
+            <a class="navbar-links" href="index.html">home</a>
+            <div class="dropdown-content">
+                <a  href="index.html#current-projects">current projects</a>
+                <a  href="index.html#finished-projects"> finished projects</a>
+                <a  href="index.html#languages">languages</a>
+                <a  href="index.html#contact">contact me</a>
+            </div>
+        </li>
+        <li class="dropdown">
+            <a class="navbar-links" href="blog.html">blog</a>
+            <div class="dropdown-content">
+                <a  href="virtual-piano.html">virtual piano blog</a>
+                <a href = "hackpad-design.html">hackpad designing blog</a>
+            </div>
+        </li>
+    </ul>   
+      <br>
+<h1>hackpad - designing the PCB, case, and code <i id="dark-mode-toggle" class="fas fa-moon icon-link" title="Toggle Dark Mode"></i></h1>
+          <p>This is another project I created to make it more intuitive and easy to create music than simply using a traditional mouse and keyboard setup.
+        </p>
+          <h2>my plan</h2>
+          <p>Every good project starts with a hurriedly jotted-down plan. Here's mine.</p>
+          <ul>
+              <li>A piano with keys that actually fit!</li>
+              <li>Note history: a log of notes that are played, solving the inevitable tragedy of forgetting that amazing melody you just played.</li>
+              <li>Chord identifier: so you don't have to work out that it's an A# M9sus4/C by yourself.</li>
+              <li>Scale indicator: highlights the diatonic notes of your chosen scale (we all forget sometimes…)</li>
+          </ul>
+
+          <h2>problems faced and lessons learnt</h2>
+          <ul>
+              <li>
+                  My first problem was getting the layout correct. Getting just the right widths and 
+                  margins took me longer than I'd like to admit… However, I'm a lot more comfortable 
+                  with positioning things using CSS than I was before that gruelling experience.
+              </li>
+              <li>
+                  At one point, there was a bug where holding a note for long enough would make the 
+                  note history rapidly log the same note over and over (and make everyone stressed). 
+                  Figuring out the logic needed to fix this taught me about objects in JavaScript, 
+                  a variable type I had completely ignored before this!
+              </li>
+              <li>
+                  I learnt a lot about Tonaljs, which was <strong>instrumental</strong> in making the 
+                  chord identifier and scale indicator.
+              </li>
+          </ul>
+          <h2>to-do</h2>
+          <ul>
+            <li>
+                Add a metronome
+              </li>
+              <li class = "done">
+                 Add a recording + export feature
+              </li>
+              
+          </ul>
+          <p>I’ll keep adding to this; in the meantime, go check out the <a target="_blank" href = "https://shim-sham.github.io/musical-home/virtual-piano.html">site!</a></p>
+      <footer><br><br>© Shambhavi Sinha<br> <img src = "media/name sticker.png" width = "150px"></footer>
+    </body>
+    <script src = "script.js"></script>
+
+</html>
