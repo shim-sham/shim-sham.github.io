@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>desiging hackpad blog</title>
+    <title>designing hackpad blog</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="s icon.png">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -27,47 +27,24 @@
         </li>
     </ul>   
       <br>
-<h1>hackpad - designing the PCB, case, and code <i id="dark-mode-toggle" class="fas fa-moon icon-link" title="Toggle Dark Mode"></i></h1>
-          <p>This is another project I created to make it more intuitive and easy to create music than simply using a traditional mouse and keyboard setup.
+<h1>hackpad - designing the PCB, case, and code (blog not finished yet - bear with me)<i id="dark-mode-toggle" class="fas fa-moon icon-link" title="Toggle Dark Mode"></i></h1>
+          <p>I made this for Hack Club’s <a href = “https://hackpad.hackclub.com/”>Hackpad</a> event.<br>
+          This is another project I created to make it more intuitive and easy to create music than simply using a traditional mouse and keyboard setup. Having never even thought about creating hardware before, my aim for this was to learn as much as I could while having fun! 
         </p>
-          <h2>my plan</h2>
-          <p>Every good project starts with a hurriedly jotted-down plan. Here's mine.</p>
-          <ul>
-              <li>A piano with keys that actually fit!</li>
-              <li>Note history: a log of notes that are played, solving the inevitable tragedy of forgetting that amazing melody you just played.</li>
-              <li>Chord identifier: so you don't have to work out that it's an A# M9sus4/C by yourself.</li>
-              <li>Scale indicator: highlights the diatonic notes of your chosen scale (we all forget sometimes…)</li>
-          </ul>
-
-          <h2>problems faced and lessons learnt</h2>
-          <ul>
-              <li>
-                  My first problem was getting the layout correct. Getting just the right widths and 
-                  margins took me longer than I'd like to admit… However, I'm a lot more comfortable 
-                  with positioning things using CSS than I was before that gruelling experience.
-              </li>
-              <li>
-                  At one point, there was a bug where holding a note for long enough would make the 
-                  note history rapidly log the same note over and over (and make everyone stressed). 
-                  Figuring out the logic needed to fix this taught me about objects in JavaScript, 
-                  a variable type I had completely ignored before this!
-              </li>
-              <li>
-                  I learnt a lot about Tonaljs, which was <strong>instrumental</strong> in making the 
-                  chord identifier and scale indicator.
-              </li>
-          </ul>
+          <h2>step 1: PCB design</h2>
+          <img class = "hackpad-blog" src="https://hc-cdn.hel1.your-objectstorage.com/s/v3/e82f0cc5c98c0c0247eff62ad14c76a040b09e8d_image.png">
+          <p>I based my PCB design off on the event’s tutorial, learning circuit design on the way.</p>
+          <img class = "hackpad-blog" src="https://hc-cdn.hel1.your-objectstorage.com/s/v3/1acac6e74d60903002441f79c862fdee99a2f0e8_image.png">
+          <p>Wiring was satisfying, graphics/deco… not as easy. But definitely worth it.</p>
+          <h2>step 2 - case design</h2>
+          <p>I’m gonna be honest, every minute spent on Fusion360 designing that case was a horrible one. Getting used to just using the software was a challenge, but at the end of it, I’m so much more confident with 3D design in general.</p>
+              
           <h2>to-do</h2>
           <ul>
             <li>
-                Add a metronome
+                Flash KMK successfully
               </li>
-              <li class = "done">
-                 Add a recording + export feature
-              </li>
-              
           </ul>
-          <p>I’ll keep adding to this; in the meantime, go check out the <a target="_blank" href = "https://shim-sham.github.io/musical-home/virtual-piano.html">site!</a></p>
       <footer><br><br>© Shambhavi Sinha<br> <img src = "media/name sticker.png" width = "150px"></footer>
     </body>
     <script src = "script.js"></script>
